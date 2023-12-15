@@ -120,16 +120,19 @@ export default async function Single({
                 isSharedUrl
                 link={`https://www.facebook.com/sharer/sharer.php?u=${`${process.env.NEXT_PUBLIC_SITE_URL}/post/${post.slug}`}`}
                 platform={<FaLinkedin size={18} />}
+                title="Facebook"
               />
               <SocialLinks
                 isSharedUrl
                 link={`https://twitter.com/intent/tweet?url=${`${process.env.NEXT_PUBLIC_SITE_URL}/post/${post.slug}`}`}
                 platform={<FiTwitter size={18} />}
+                title="Twitter"
               />
               <SocialLinks
                 isSharedUrl
                 link={`https://www.linkedin.com/shareArticle?mini=true&url=${`${process.env.NEXT_PUBLIC_SITE_URL}/post/${post.slug}`}`}
                 platform={<FaFacebook size={18} />}
+                title="Linkedin"
               />
             </div>
           </div>

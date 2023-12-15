@@ -15,18 +15,22 @@ export default function Footer() {
               <SocialLinks
                 link={SiteConfig.socialLinks.github}
                 platform={<FaGithub size={18} />}
+                title="Github"
               />
               <SocialLinks
                 link={SiteConfig.socialLinks.linkedin}
                 platform={<FaLinkedin size={18} />}
+                title="Linkedin"
               />
               <SocialLinks
                 link={SiteConfig.socialLinks.twitter}
                 platform={<FiTwitter size={18} />}
+                title="Twitter "
               />
               <SocialLinks
                 link={SiteConfig.socialLinks.instagran}
                 platform={<FaInstagram size={18} />}
+                title="Instagram "
               />
             </div>
           </div>

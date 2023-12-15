@@ -5,14 +5,16 @@ interface SocialLinksProps {
   platform: ReactNode
   link: string
   isSharedUrl?: boolean
+  title: string
 }
 export default function SocialLinks({
   platform,
   link,
+  title,
   isSharedUrl = false,
 }: SocialLinksProps) {
   return (
-    <Link href={link}>
+    <Link href={link} title={title}>
       <div
         className={`${
           isSharedUrl &&

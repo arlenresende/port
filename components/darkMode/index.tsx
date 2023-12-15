@@ -19,6 +19,7 @@ export default function DarkModeButton() {
   return (
     <button
       className=""
+      aria-label="Dark Mode"
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
     >
       {theme === 'dark' ? (
