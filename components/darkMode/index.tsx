@@ -25,7 +25,7 @@ export default function DarkModeButton() {
       {theme === 'dark' ? (
         <FaMoon className="text-mercury" />
       ) : (
-        <FaSun className="hover:text-sun" />
+        <FaSun className="hover:text-big-stone" />
       )}
     </button>
   )

@@ -26,70 +26,72 @@ export default function Navigation() {
                 <li>
                   <Link
                     href="/projects"
-                    className=" font-bold hover:text-big-stone dark:hover:text-sun"
+                    className=" font-bold hover:text-big-stone dark:hover:text-big-stone"
                   >
                     Projects
                   </Link>
                 </li>
 
-                <DropdownMenu.Root
-                  onOpenChange={() => setOpenModal(!openModal)}
-                  open={openModal}
-                >
-                  <DropdownMenu.Trigger>
-                    <div className="cursor-pointer font-bold hover:text-big-stone dark:hover:text-sun">
-                      Blog
-                    </div>
-                  </DropdownMenu.Trigger>
+                <li>
+                  <DropdownMenu.Root
+                    onOpenChange={() => setOpenModal(!openModal)}
+                    open={openModal}
+                  >
+                    <DropdownMenu.Trigger>
+                      <div className="cursor-pointer font-bold hover:text-big-stone dark:hover:text-big-stone">
+                        Blog
+                      </div>
+                    </DropdownMenu.Trigger>
 
-                  <DropdownMenu.Content className="w-32">
-                    <DropdownMenu.Item onSelect={() => router.push('/blog')}>
-                      <div
-                        className="flex font-bold hover:text-big-stone dark:hover:text-sun w-full"
-                        onClick={() => setOpenModal(!openModal)}
+                    <DropdownMenu.Content className="w-32">
+                      <DropdownMenu.Item onSelect={() => router.push('/blog')}>
+                        <div
+                          className="flex font-bold hover:text-big-stone dark:hover:text-big-stone w-full"
+                          onClick={() => setOpenModal(!openModal)}
+                        >
+                          All Posts
+                        </div>
+                      </DropdownMenu.Item>
+                      <DropdownMenu.Item
+                        onSelect={() => router.push('/blog/technology')}
                       >
-                        All Posts
-                      </div>
-                    </DropdownMenu.Item>
-                    <DropdownMenu.Item
-                      onSelect={() => router.push('/blog/technology')}
-                    >
-                      <div
-                        className="flex font-bold hover:text-big-stone dark:hover:text-sun w-full"
-                        onClick={() => setOpenModal(!openModal)}
-                      >
-                        Technology
-                      </div>
-                    </DropdownMenu.Item>
-                    <DropdownMenu.Item>
-                      <Link
-                        href="/blog/learning-and-growth"
-                        className=" font-bold  hover:text-big-stone dark:hover:text-sun"
-                        onClick={() => setOpenModal(!openModal)}
-                      >
-                        Learning and Growth
-                      </Link>
-                    </DropdownMenu.Item>
-                    <DropdownMenu.Item>
-                      <Link
-                        href="/blog/development"
-                        className=" font-bold  hover:text-big-stone dark:hover:text-sun"
-                        onClick={() => setOpenModal(!openModal)}
-                      >
-                        Development
-                      </Link>
-                    </DropdownMenu.Item>
-                    <DropdownMenu.Item>
-                      <Link
-                        href="/blog/design-and-creativity"
-                        className=" font-bold  hover:text-big-stone dark:hover:text-sun"
-                        onClick={() => setOpenModal(!openModal)}
-                      >
-                        Design and Creativity
-                      </Link>
-                    </DropdownMenu.Item>
-                  </DropdownMenu.Content>
-                </DropdownMenu.Root>
+                        <div
+                          className="flex font-bold hover:text-big-stone dark:hover:text-big-stone w-full"
+                          onClick={() => setOpenModal(!openModal)}
+                        >
+                          Technology
+                        </div>
+                      </DropdownMenu.Item>
+                      <DropdownMenu.Item>
+                        <Link
+                          href="/blog/learning-and-growth"
+                          className=" font-bold  hover:text-big-stone dark:hover:text-big-stone"
+                          onClick={() => setOpenModal(!openModal)}
+                        >
+                          Learning and Growth
+                        </Link>
+                      </DropdownMenu.Item>
+                      <DropdownMenu.Item>
+                        <Link
+                          href="/blog/development"
+                          className=" font-bold  hover:text-big-stone dark:hover:text-big-stone"
+                          onClick={() => setOpenModal(!openModal)}
+                        >
+                          Development
+                        </Link>
+                      </DropdownMenu.Item>
+                      <DropdownMenu.Item>
+                        <Link
+                          href="/blog/design-and-creativity"
+                          className=" font-bold  hover:text-big-stone dark:hover:text-big-stone"
+                          onClick={() => setOpenModal(!openModal)}
+                        >
+                          Design and Creativity
+                        </Link>
+                      </DropdownMenu.Item>
+                    </DropdownMenu.Content>
+                  </DropdownMenu.Root>
+                </li>
               </ul>
               <DarkModeButton />
             </nav>

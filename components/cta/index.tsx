@@ -34,7 +34,7 @@ export default function CTA() {
     <div className="px-6 py-10 rounded-md bg-big-stone ">
       <div>
         <div>
-          <h3 className="font-semibold text-2xl text-sun">#contactme</h3>
+          <h3 className="font-semibold text-2xl text-big-stone">#contactme</h3>
         </div>
         <p className="mt-2 max-w-lg text-white">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id

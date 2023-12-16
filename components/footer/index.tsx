@@ -50,11 +50,17 @@ export default function Footer() {
           </div>
           <div className="text-sm text-neutral-400 dark:text-white">
             Made with love by{' '}
-            <Link href="/" className="text-big-stone font-bold dark:text-sun">
+            <Link
+              href="/"
+              className="text-big-stone font-bold dark:text-big-stone"
+            >
               Next
             </Link>{' '}
             and{' '}
-            <Link href="/" className="text-big-stone font-bold dark:text-sun">
+            <Link
+              href="/"
+              className="text-big-stone font-bold dark:text-big-stone"
+            >
               Taiwlind
             </Link>
           </div>
