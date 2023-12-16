@@ -35,7 +35,7 @@ export default function Footer() {
             </div>
           </div>
           <div>
-            <div className="text-sm text-neutral-400 dark:text-white  font-medium">
+            <div className="text-sm text-neutral-600 dark:text-white  font-medium">
               Currently At:
             </div>
             <div className="bg-white  dark:bg-black shadow-md rounded-md px-3 py-2 flex items-center gap-2">
@@ -45,10 +45,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="py-4 border-t flex flex-wrap justify-between gap-4 mt-4">
-          <div className="text-sm text-neutral-400 dark:text-white">
+          <div className="text-sm text-neutral-600 dark:text-white">
             All rights are reserved | Copyright {new Date().getFullYear()}
           </div>
-          <div className="text-sm text-neutral-400 dark:text-white">
+          <div className="text-sm text-neutral-600 dark:text-white">
             Made with love by{' '}
             <Link
               href="/"
