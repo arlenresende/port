@@ -28,7 +28,7 @@ export default function PostCard({
       }`}
     >
       <Image
-        className={`rounded-md w-full object-cover object-center max-h-[300px] ${
+        className={`rounded-md w-full object-cover object-center max-h-[300px] h-full ${
           reverse ? 'md:order-last' : ''
         }`}
         src={`${process.env.NEXT_PUBLIC_ASSETS_URL}${post?.image}?key=optimised`}

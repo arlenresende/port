@@ -6,7 +6,9 @@ export default function Projects() {
   return (
     <PaddingContainer>
       <main className="h-auto space-y-10">
-        <PostCard post={DUMMY_POSTS[0]} type="projects" />
+        <h2 className="font-medium text-xl md:text-2xl lg:text-2xl">
+          Comming son ...
+        </h2>
       </main>
     </PaddingContainer>
   )

@@ -4,21 +4,21 @@
 
 @layer utilities {
   .rich-text h2 {
-    @apply mb-3 text-2xl font-semibold text-neutral-900;
+    @apply mb-3 text-2xl font-semibold text-neutral-900 dark:text-sun;
   }
 
   .rich-text h3 {
-    @apply mb-3 text-xl font-semibold text-neutral-900;
+    @apply mb-3 text-xl font-semibold text-neutral-900 dark:text-sun;
   }
   .rich-text h4 {
-    @apply mb-3 text-lg font-semibold text-neutral-900;
+    @apply mb-3 text-lg font-semibold text-neutral-900 dark:text-sun;
   }
 
   .rich-text p {
-    @apply mb-3 leading-snug text-neutral-700;
+    @apply mb-3 leading-snug text-neutral-700 dark:text-white;
   }
    .rich-text strong {
-    @apply mb-3 leading-snug text-neutral-900 font-bold;
+    @apply mb-3 leading-snug text-neutral-900 font-bold dark:text-sun;
   }
   code {
     display: block;
@@ -27,7 +27,7 @@
     line-height: 1.6em;
     white-space: pre;
     padding: 1em 2%;
-    border: 2px solid rgb(204, 204, 204);
+    
     border-radius: 0.25em;
     background-color: #14213D;
     color: rgb(255, 255, 255);

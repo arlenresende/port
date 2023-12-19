@@ -8,7 +8,7 @@ export default function Footer() {
   return (
     <div className="mt-12 ">
       <PaddingContainer>
-        <div className=" flex flex-wrap justify-between gap-4 border-t py-6">
+        <div className=" flex flex-wrap justify-between gap-4 border-t dark:border-none py-6">
           <div>
             <div className="text-sm font-medium">#contactme</div>
             <div className="flex items-center gap-2 text-neutral-600 dark:text-white mt-2">
@@ -50,17 +50,11 @@ export default function Footer() {
           </div>
           <div className="text-sm text-neutral-600 dark:text-white">
             Made with love by{' '}
-            <Link
-              href="/"
-              className="text-big-stone font-bold dark:text-big-stone"
-            >
+            <Link href="/" className="font-bold dark:text-sun ">
               Next
             </Link>{' '}
             and{' '}
-            <Link
-              href="/"
-              className="text-big-stone font-bold dark:text-big-stone"
-            >
+            <Link href="/" className=" font-bold dark:text-sun">
               Taiwlind
             </Link>
           </div>

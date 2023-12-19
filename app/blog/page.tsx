@@ -62,13 +62,15 @@ export default async function Blog() {
 
         <PostList
           // @ts-expect-error Server Component
-          posts={posts.filter((_post, index) => index > 0 && index < 2)}
+          posts={posts.filter((_post, index) => index > 0 && index < 3)}
         />
         <CTA />
-        <PostCard reverse post={DUMMY_POSTS[3]} />
-        <PostList
-          posts={DUMMY_POSTS.filter((_post, index) => index > 3 && index < 6)}
-        />
+        {/* @ts-expect-error Server Component */}
+        <PostCard reverse post={posts[3]} />
+        {/* <PostList
+          // @ts-expect-error Server Component
+          posts={posts.filter((_post, index) => index > 3 && index < 6)}
+        /> */}
       </main>
     </PaddingContainer>
   )

@@ -23,5 +23,5 @@ export default function PostBody({ body }: { body: string }) {
   const getParseHtml = (body: string) => {
     return parse(body, options)
   }
-  return <div className="rich-text">{getParseHtml(body)}</div>
+  return <div className="rich-text text-white">{getParseHtml(body)}</div>
 }

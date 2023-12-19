@@ -18,7 +18,7 @@ export default function SocialLinks({
       <div
         className={`${
           isSharedUrl &&
-          'py-2 px-3 bg-neutral-200 rounded-md text-neutral-600 hover:bg-neutral-600 hover:text-neutral-400 duration-100 easy-in-out transition-colors'
+          'py-2 px-3 bg-neutral-200 rounded-md text-neutral-600 hover:dark:text-sun hover:bg-neutral-600 hover:text-neutral-400 duration-100 easy-in-out transition-colors'
         }`}
       >
         {platform}

@@ -6,7 +6,7 @@ export default function Home() {
       <div className="h-full flex flex-col gap-6 text-center">
         <h1 className="text-4xl">
           Hello, I am{' '}
-          <span className="text-big-stone">
+          <span className="text-big-stone dark:text-sun">
             {'{'} Arlen Resende {'}'}
           </span>{' '}
           a full-stack developer
