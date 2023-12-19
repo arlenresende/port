@@ -15,18 +15,18 @@ export default function Navigation() {
       className={`border-b dark:border-none sticky z-[999] top-0 lef-0 right-0 bg-white dark:bg-black bg-opacity-50 dark:bg-opacity-100 backdrop-blur-md`}
     >
       <PaddingContainer>
-        <div className="py-5 flex items-center justify-between">
+        <div className="py-5 flex items-center justify-between ">
           <Link href="/" className="font-extrabold  text-sm md:text-xl">
             {`<`} Arlen Resende {`/>`}
           </Link>
           {/* Categories Links */}
           <div>
-            <nav className="flex items-center justify-between gap-6">
-              <ul className="flex items-center gap-4 text-neutral-600 dark:text-white">
+            <nav className="flex items-center justify-between gap-3 md:gap-6">
+              <ul className="flex items-center gap-2 md:gap-4 text-neutral-600 dark:text-white">
                 <li>
                   <Link
                     href="/projects"
-                    className=" font-bold hover:text-big-stone dark:hover:text-sun"
+                    className=" font-bold hover:text-big-stone dark:hover:text-sun text-sm md:text-base"
                   >
                     Projects
                   </Link>
@@ -37,7 +37,7 @@ export default function Navigation() {
                 open={openModal}
               >
                 <DropdownMenu.Trigger>
-                  <div className="cursor-pointer font-bold hover:text-big-stone dark:hover:text-sun">
+                  <div className="cursor-pointer font-bold hover:text-big-stone dark:hover:text-sun text-sm md:text-base">
                     Blog
                   </div>
                 </DropdownMenu.Trigger>

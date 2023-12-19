@@ -11,7 +11,7 @@ export default function PostList({
   layout = 'vertical',
 }: PostListProps) {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-flow-col lg:auto-cols-fr">
+    <div className="flex flex-col md:grid grid-cols-1 md:grid-cols-2 gap-10 lg:grid-flow-col lg:auto-cols-fr">
       {posts.map((post) => (
         <PostCard layout={layout} post={post} key={post.id} />
       ))}
